@@ -1,0 +1,85 @@
+.FRONTEND_FORM {
+    display: block;
+    box-sizing: border-box;
+    max-width: 500px;
+    margin: 25px auto;
+
+}
+
+.FRONTEND_FORM * {
+    box-sizing: border-box;
+}
+
+.FRONTEND_FORM .title {
+    font-size: 2rem;
+    line-height: 1.3em;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.FRONTEND_FORM .description {
+    line-height: 1.3em;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.FRONTEND_FORM .description_after {
+    line-height: 1.3em;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.FRONTEND_FORM .error {
+    color: #f00;
+    font-weight: bold;
+}
+
+.FRONTEND_FORM .field {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.FRONTEND_FORM .field input[type="text"],
+.FRONTEND_FORM .field input[type="date"],
+.FRONTEND_FORM .field input[type="tel"],
+.FRONTEND_FORM .field input[type="email"],
+.FRONTEND_FORM .field textarea,
+.FRONTEND_FORM .field select {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+}
+
+.FRONTEND_FORM .field label {
+    display: inline-block;
+}
+
+.FRONTEND_FORM .field.tel label,
+.FRONTEND_FORM .field.date label,
+.FRONTEND_FORM .field.email label,
+.FRONTEND_FORM .field.text label,
+.FRONTEND_FORM .field.textarea label {
+    position: absolute;
+    display: inline-block;
+    padding: 0px 5px;
+    background-color: #fff;
+    color: #222;
+    transition: all ease 0.2s;
+    top: 12px;
+    left: 15px;
+}
+
+.FRONTEND_FORM .field:hover label,
+.FRONTEND_FORM .field.active label {
+    top: -10px;
+}
+
+.FRONTEND_FORM .field input[type="checkbox"],
+.FRONTEND_FORM .field input[type="radio"] {
+    margin-right: 10px;
+}
